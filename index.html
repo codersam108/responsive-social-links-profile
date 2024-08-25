@@ -2,110 +2,204 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   
   <title>Frontend Mentor | Social links profile</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    body {
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    body{
       background-color: hsl(0, 0%, 8%);
-      margin: 0;
-      padding: 0;
     }
-    .outer {
+    .outer{
       display: flex;
       flex-direction: column;
-      height: 100vh;
+      height:98vh;
       justify-content: center;
       align-items: center;
       background-color: hsl(0, 0%, 8%);
+      
     }
-    .full {
+    .full{
       display: flex;
       flex-direction: column;
-      padding: 30px;
+      padding:50px;
       border-radius: 10px;
       background-color: hsl(0, 0%, 12%);
-      text-align: center;
-      width: 100%;
-      max-width: 375px;
+  
     }
-    .im {
-      width: 75px;
-      height: 75px;
+    
+    .im{
+      margin-left:90px;
+      margin-bottom:26px;
+      width:75px;
+      height:75px;
       border-radius: 50%;
-      display: block;
-      margin: 0 auto 26px;
     }
-    h1 {
+    h1{
       color: hsl(0, 0%, 100%);
       font-family: "Inter", sans-serif;
+      font-optical-sizing: auto;
       font-weight: 400;
-      font-size: 1.5rem;
+      font-style: normal;
+      text-align: center;
+      font-size:xx-large;
+      
+      
     }
-    h2 {
-      color: hsl(75, 94%, 57%);
+    h2{
+      color:hsl(75, 94%, 57%);
       font-family: "Inter", sans-serif;
+      font-optical-sizing: auto;
       font-weight: 600;
-      font-size: 1rem;
-      margin-bottom: 10px;
+      font-style:normal;
+      font-size:medium;
+      text-align: center;
     }
-    p {
-      color: white;
+    p{
+      color:white;
       font-family: "Inter", sans-serif;
+      font-optical-sizing: auto;
       font-weight: 300;
-      font-size: 0.875rem;
-      margin-top: 10px;
-      margin-bottom: 20px;
+      font-style: normal;
+      text-align: center;
+      font-size: 14px;
+      margin-top: 30px;
     }
-    .second {
+    .second{
       display: flex;
       flex-direction: column;
-      gap: 10px;
+     gap:15px
+      
     }
-    .second div {
-      color: white;
+    .github{
+      color:white;
       font-family: "Inter", sans-serif;
+      font-optical-sizing: auto;
       font-weight: 500;
-      background-color: hsl(0, 0%, 20%);
-      padding: 12px;
-      border-radius: 10px;
-      cursor: pointer;
+      font-style: normal;
+      background-color:hsl(0, 0%, 20%) ;
+      padding:15px;
+      border-radius:10px ;
+      text-align: center;
+      
+      
     }
-    .second div:hover {
+    .github:hover{
       background-color: hsl(75, 94%, 57%);
-      color: black;
+      color:black;
+    }
+    .frontend{
+      color:white;
+      font-family: "Inter", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 500;
+      font-style: normal;
+      background-color:hsl(0, 0%, 20%) ;
+      padding:15px;
+      border-radius:10px ;
+      text-align: center;
+    }
+    .frontend:hover{
+      background-color: hsl(75, 94%, 57%);
+      color:black;
+
+    }
+    .Linkedin{
+      color:white;
+      font-family: "Inter", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 500;
+      font-style: normal;
+      background-color:hsl(0, 0%, 20%) ;
+      padding:15px;
+      border-radius:10px ;
+      text-align: center;
+      
+    }
+    .Linkedin:hover{
+      background-color: hsl(75, 94%, 57%);
+      color:black;
+    }
+    .twitter{
+      color:white;
+      font-family: "Inter", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 500;
+      font-style: normal;
+      background-color:hsl(0, 0%, 20%) ;
+      padding:15px;
+      border-radius:10px ;
+      text-align: center;
+     
+    }
+    .twitter:hover{
+      background-color: hsl(75, 94%, 57%);
+      color:black;
+    }
+    .instagram{
+      color:white;
+      font-family: "Inter", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 500;
+      font-style: normal;
+      background-color:hsl(0, 0%, 20%) ;
+      padding:15px;
+      border-radius:10px ;
+      text-align: center;
+      
+    }
+    .instagram:hover{
+      background-color: hsl(75, 94%, 57%);
+      color:black;
+    }
+    @media(max-width:375px)
+    {
+      .full{
+        padding:20px;
+      }
+      .second div{
+        padding:10px;
+        
+      }
+
+      
     }
 
-    @media(max-width: 375px) {
-      .full {
-        padding: 20px;
-      }
-      .second div {
-        padding: 10px;
-        font-size: 0.875rem;
-      }
-    }
+
   </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="outer">
-    <div class="full">
-      <img class="im" src="./avatar-jessica.jpeg" alt="Jessica Image">
-      <h1>Jessica Randall</h1>
-      <h2>London, United Kingdom</h2>
-      <p>"Front-end developer and avid reader."</p>
-      <div class="second">
-        <div class="github">Github</div>
-        <div class="frontend">Frontend Mentor</div>
-        <div class="Linkedin">LinkedIn</div>
-        <div class="twitter">Twitter</div>
-        <div class="instagram">Instagram</div>
-      </div>
+  <div class="full">
+    <div>
+    <img class="im" src="./assets/images/avatar-jessica.jpeg">
+    <h1>Jessica Randall</h1>
+    <h2>London,United Kingdom</h2>
+    <p>"Front-end developer and avid reader."</p>
     </div>
+    <div class="second">
+      <div class="github">Github</div>
+      <div class="frontend">Frontend Mentor</div>
+      <div class="Linkedin">LinkedIn</div>
+      <div class="twitter">Twitter</div>
+      <div class="instagram">Instagram</div>
+    </div>
+
+
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Saksham</a>.
+  </div>
   </div>
 </body>
 </html>
